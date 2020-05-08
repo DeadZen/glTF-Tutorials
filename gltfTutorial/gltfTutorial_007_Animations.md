@@ -145,7 +145,7 @@ For scalar and vector types, use a linear interpolation (generally called `lerp`
         return previousPoint + interpolationValue * (nextPoint - previousPoint)
 ```
 
-In the case of rotations expressed as quaternions, you need to perform a spherical linear intepolation (`slerp`) between the previous and next values:
+In the case of rotations expressed as quaternions, you need to perform a spherical linear interpolation (`slerp`) between the previous and next values:
 
 ```
     Quat slerp(previousQuat, nextQuat, interpolationValue)
